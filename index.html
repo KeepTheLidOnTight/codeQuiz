@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ben & Jerry's</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/style.css">
     <!-- CSS only -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
@@ -14,21 +14,51 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="p-3" style="background-color: black">
-        <a href="highscores.html" style="color: white;">See High Scores</a>
-        <span id="timer" class="float-right" style="color: white;">Time: 0</span>
+        <!-- header with link to high scores page-->
+    <header class="p-3">
+        <a href="highscores.html">See High Scores</a>
+        <span class="float-right" id="timer">Time: 100 Seconds</span>
     </header>
-    
-    <div class="container" id="homepage">
+        <!--home page with description of what's going on in the quiz-->
+    <div class="container" id="mainPage">
         <div class="row justify-content-center">
             <div class="col-10 col-lg-8 text-center">
                 <h1>How well do you know Ben & Jerry's?</h1> <br>
-                <p>Try to answer the following questions about coding with JavaScript in 90 seconds. <br>
-                <strong>NOTE:</strong> If you answer incorrectly, you'll lose some time (10 seconds to be exact)!</p> <br>
-                <button type="button" id="startBtn" class="btn btn-info btn-lg">START</button>
+                <p>See if you can determine the correct ingredients in each flavor of Ben & Jerry's ice cream.<br>
+                For each incorrect answer, 10 seconds will be decucted from your time!</p> <br>
+                <button type="button" id="startQuiz">Start Quiz</button>
             </div>
         </div>
     </div>
-    <script src="./script.js"></script>
+    <!-- this is the question and answer area-->
+    <div class="container" id="questionAnswer"> 
+        <div class="row justify-content-center">
+            <div class="col-10 col-lg-8">
+                <h1 id="questions">Question</h1>
+                <ul id="answers">
+                    <li id="answer1">A: </li>
+                    <li id="answer2">B: </li>
+                    <li id="answer3">C: </li>
+                    <li id="answer4">D: </li>
+                </ul>
+                <p id="incorrect"></p>
+            </div>
+        </div>
+    </div>
+    <!--when the quiz is finished-->
+    <div class="container" id="submitScore">
+        <div class="row justify-content-center">
+            <div class="col-10 col-lg-8">
+                <h1>Quiz Complete</h1>
+                <p id="userScore"> </p>
+                <form class="formGroup">
+                    <label for="userScore">Enter your name: </label>
+                    <input type="text" id="userName"> 
+                    <button type="button" id="submitBtn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/script.js"></script>
 </body>
 </html>

@@ -15,7 +15,9 @@ N/A
 
 # Credits/Thanks:
 W3 Schools: [W3](https://www.w3schools.com/js/DEFAULT.asp)
+<br>
 JavaScript: [JS](https://www.javascripttutorial.net/javascript-multidimensional-array/)
+<br>
 I would personally like to thank a majority of the members of my cohort at the University of Minnesota.
 
 # License Information: 

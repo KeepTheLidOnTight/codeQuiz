@@ -1,0 +1,16 @@
+.p-3{
+    background-color: black;
+    color: white;
+}
+.container{
+    font-family: 'Times New Roman', Times, serif;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
